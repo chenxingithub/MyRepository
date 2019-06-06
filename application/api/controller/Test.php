@@ -26,7 +26,7 @@ class Test extends ApiCommon
    
       //游戏预约
 
-    public function test(Request $request)
+    public function testxxxx(Request $request)
     {
         $data = [
             'gameId'=>intval($request->post('gameId')),
