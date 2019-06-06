@@ -26,79 +26,10 @@ class Test extends ApiCommon
    
       //游戏预约
 
-    public function testxxxx(Request $request)
+    public function test()
     {
-        $data = [
-            'gameId'=>intval($request->post('gameId')),
-            'mobile'=>trim($request->post('mobile')),
-            'email'=>trim($request->post('email')),
-            'smsCode'=>trim($request->post('smsCode')),
-            'andOrIos'=>intval($request->post('andOrIos')),
-        ];
-        
-        //参数检查
-        $validate = Loader::validate('BookingUserInfo');
-        if(!$validate->check($data)){
-      
-           return outputJson(0,$validate->getError());
-        }
-        
-        //短信验证码校验
-        $SmsObj = new SmsCode();
-        if($SmsObj->getCode($request->get('mobile'), '') != $request->get('smsCode')){
-    
-            return outputJson(0,'短信验证码不正确哦~');
-        }
-
-        $res = MBookingUserInfo::where('mobile',$request->post('mobile'))
-        ->where('gameId',$request->post('gameId'))->find();
-
-        if($res){
-            
-            return outputJson(0,'请勿重复预约哦~');
-        }
-    
-        unset( $data['smsCode']);
-
-        //插入数据
-        try{
-
-         MBookingUserInfo::insert($data);
-
-        } catch (\Exception $e) {
-            
-            return outputJson(0,'预约失败哦~');
-        }
-       
-        return outputJson(1,'恭喜您，预约成功~');
+    var_dump(123);die;   
     }
-    
-
-    
-    //生成验证码
-
-    public function verify()
-    {
-        $config=[
-        // 验证码字符集合
-        'codeSet' => '2345678',
-        // 验证码字体大小(px)
-        'fontSize'=>15,
-        // 是否画混淆曲线
-        'useCurve' => false,
-        // 验证码图片高度
-        'imageH' => 30,
-        // 验证码图片宽度
-        'imageW' => 120,
-        // 验证码位数
-        'length' => 4,
-        // 验证成功后是否重置        
-        'reset' => true
-        ];
-        $captcha = new Captcha($config);
-        return $captcha->entry();
-
-}
      
 
     //校验验证码
