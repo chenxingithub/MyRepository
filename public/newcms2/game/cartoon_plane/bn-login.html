@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录注册</title>
+</head>
+<body>
+	
+<script src="js/gamecp.min.js"></script>
+<script type="text/javascript">
+	/**
+	* 调用 JS SDK 初始化 接口
+	*/
+	window.onload = function() {
+	 window.YHCPSDK.init('onCpCallback');
+	};
+	/**
+	* 接收回调的 函数
+	* @param callback_type 回调类型
+	* @param callback_data 回调的 json 数据
+	*/
+	window.onCpCallback = function (callback_type, callback_data) {
+	 var data = eval('(' + callback_data + ')');
+	 var ret = data.ret;
+	 switch (callback_type) {
+	 case YHCPSDK.E_INIT:
+	 if (ret == 1) {
+	 alert('初始化成功');
+	 } else {
+	 alert('初始化失败！');
+	 }
+	 break;
+	}
+	}
+
+</script>	
+</body>
+</html>

@@ -1,0 +1,7 @@
+//在build/utils->scss配置项中全局引入
+@mixin bg($imgPath, $w: 100%, $h: 100%, $x: left, $y: top) {
+  background-image: url($imgPath);
+  background-repeat: no-repeat;
+  background-size: $w $h;
+  background-position: $x $y;
+}

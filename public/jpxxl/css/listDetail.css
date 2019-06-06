@@ -1,0 +1,412 @@
+* {
+	font-family: "Microsoft YaHei" ! important;
+}
+   
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+	background: white;
+	height: 100%;
+}
+.container {
+	width: 10rem;
+	overflow-x: hidden;
+    margin: 0 auto;
+    background: #fff7dc;
+}
+.downloadTop {
+	width: 10rem;
+	height: 1.33333rem;
+	position: fixed;
+	background: url("../images/downloadTopBg.png") no-repeat;
+	background-size: 10rem 1.3333rem;
+	margin: 0 auto;
+	padding: 0.12rem 0.4rem;
+	z-index: 8888;
+	background: #e8ce9c;
+}
+.topContent {
+	width: 100%;
+	/* height: 1.066rem; */
+	height: 100%;
+}
+.topContentImg{
+	width: 1.066rem;
+	height: 1.066rem;
+}
+.topContentImg img{
+	width: 100%;
+	height: 100%;
+}
+.topContentImg,.topContentText {
+	float: left;
+}
+#topBtn {
+	float: right;
+	width: 3.5rem;
+	height: 0.8rem;
+	margin-top: 0.15rem;
+}
+.homePageBtn{
+    width: 1.6rem;
+    height: 0.8rem;
+    float: left;
+	background: url("../images/homePageBtn.png") no-repeat;
+	/* 250 60 */
+	background-size: 3.333rem 0.8rem;
+	background-position: 0 0;
+}
+.gemeDownloadBtn{
+    width: 1.6rem;
+    height: 0.8rem;
+    float: right;
+	background: url("../images/topBtn.png") no-repeat;
+	/* 250 60 */
+	background-size: 3.333rem 0.8rem;
+	background-position: 0 0;
+}
+.topContentText {
+	padding: 0.05rem 0 0.13rem 0.08rem;
+	color: #683307;
+}
+.topContentText em{
+	font-size: .4266rem;
+	font-weight: bold;	
+}
+.topContentText span{
+	font-size: .2933rem;
+}
+/* BEGIN 导航条*/
+.navBar {
+	width: 10rem;
+	height: 1.6rem;
+	background: #ac7d11;
+	position: fixed;
+	bottom: 0;
+	z-index: 8888;
+}
+.navBar ul{}
+.navBar .nav{
+	width: 2rem;
+	height: 1.6rem;
+	float: left;
+	margin: 0 auto;
+}
+.navBar .navIcon{
+	margin: -.45rem auto 0;
+	position: relative;
+	top: 50%;
+	background: url("../images/navBarIcon.png") no-repeat;
+	background-size:  10rem 2.4rem;
+	display: block;
+}
+.navBar .newsInfoImg{
+	width: 1.29rem;
+	height: 1.09rem;
+	background-position: -.6333rem -.1733rem;
+	/* y = 1.25rem */
+	text-align: center; 
+}
+.navBar .newsInfoImgClick{
+	background-position: -.6333rem -.1733rem;
+}
+.navBar .gameInfoImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -2.5333rem -.1733rem;
+}
+.navBar .newInstructionImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -4.366rem -.1733rem;
+}
+.navBar .getGiftImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -6.2933rem -.1733rem;
+}
+.navBar .usersImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -8.2rem -.1733rem;
+}
+/* END 导航条*/
+
+.main{
+    width: 9.2rem;
+    /* height: 11rem; */
+    /* background: skyblue; */
+    margin: 0 auto;
+    margin-top: 1.333rem;
+    padding-top: .3rem;
+    text-align: center;
+}
+.main .textContent{
+    width: 8.8rem;
+	margin: 0 auto;
+	min-height: 10rem;
+}
+.main .textContent{
+    height: auto;
+}
+.main .search{
+    position: relative;
+    width: 9.2rem;
+    height: 0.9333rem;
+	margin-top: .3rem;
+}
+.main .search input{
+    width: 9.2rem;
+    height: 0.9333rem;
+    background: #fffcf0;
+    /* border: 1px solid #d2b081; */
+    padding: 0 .333rem; 
+	font-size: .34666rem;
+	border: 1px solid #d2b081; 
+}
+.main .search::-webkit-input-placeholder { /* WebKit browsers */
+	　　color:#dec5a1;
+}
+.main .search input::-mozs-input-placeholder { /* WebKit browsers */
+	　　color:#dec5a1;
+}
+.main .search img{
+    position: absolute;
+    top: .2rem;
+    right: .3333rem;
+    width: .5333rem;
+    height: .5333rem;
+}
+
+.title{
+    width: 7.333rem;
+    font-size: .45333rem;
+    /* text-align: center; */
+    margin: .5066rem auto .32rem;
+}
+.title span{
+    font-size: .45333rem;
+    color: #c0841a;
+    font-weight: 600;
+}
+.publicTime{
+    /* text-align: center; */
+}
+.publicTime span{
+    font-size: .2666rem;
+    color: #e5ca9b;
+}
+.textContent .splitLine{
+	width:100%;
+	margin: .2933rem auto .5333rem;
+	height: 1px;
+	border-top: 1px solid #e8d8b4;
+}
+.main .content{
+    text-align: justify;
+    color: #c0841a;
+}
+.content p{
+    color: #c0841a;
+	text-indent: .6666rem;
+	line-height: .6rem;
+	font-size: .34rem;
+}
+.content p span{
+    /* font-size: .34rem; */
+    text-indent: .6666rem;
+}
+.content img{
+    /* width: auto; */
+	position: relative;
+	margin: .4rem auto;
+	display: block;
+	height: auto;
+}
+.content .bottomTb{
+    color: white;
+    background: #d9b268;
+    margin: .666rem auto 1.066rem;
+    text-align: center;
+}
+.content .bottomTb td{
+    width: 1.9333rem;
+    height: .6666rem;
+    border: 1px solid white;
+    font-size: .24rem;
+}
+
+.funPart{
+    width: 10rem;
+    height: 2.1333rem;
+    background: #fffaea;
+    display: -webkit-flex;
+    display: flex;
+    align-content: justify;
+    justify-content: space-between;
+    padding: 0 .45rem;
+}
+.funPart .Btn{
+    width: 2.266rem;
+    height: .8666rem;
+    border-radius: .433rem;
+    align-self: center;
+    text-align: center;
+    line-height: .8666rem; 
+}
+.funPart .Btn span{
+    font-size: .4rem;
+}
+.funPart .zan{
+    border: 1px solid #ff3d17;
+    color: #ff3d17;
+}
+.funPart .zan i{
+    display: inline-block;
+    width: .4rem;
+    height: .4rem;
+    background: url("../images/dianzan.png");
+    background-size: .8216rem .4rem;
+    background-position: 0 0;
+}
+.funPart .share{
+    border: 1px solid #0d6bff; 
+    color: #0d6bff;
+}
+/* BEGIN footer */
+footer {
+	width: 10rem;
+	height: 6rem;
+	margin-bottom: 1.6rem;
+}
+footer .footFunc {
+	width: 10rem;
+	height: 4rem;
+	background: #855704;
+}
+footer .footFunc table{
+	width: 10rem;
+	height: .826rem;
+	display: inline-block;
+	margin-top: .65rem;
+}
+footer .footFunc table td{
+	width: 3.333rem;
+	height: .826rem;
+	/* padding: 0 0 0 .3rem; */
+	text-align: center;
+}
+footer .footFunc table td img{
+	width: .826rem;
+	height: .826rem;
+}
+footer .footFunc table td span{
+	margin-left: .15rem;
+	font-size: .32rem;
+	color: #f9c86f;
+}
+footer .phone {
+	text-align: center;
+	margin-top: .65rem;
+	color: #f9c86f;
+}
+footer .phone {
+	font-size: .32rem;
+}
+footer .phone p{
+	margin-top: .1rem;
+}
+footer .phone b{
+	margin-left: .15rem;
+}
+footer .phone img{
+	width: .666rem;
+	height: .64rem;
+}
+footer .companyInfo {
+	width: 10rem;
+	height: 2rem;
+	position: relative;
+	background: #6d4703;
+	padding: .25rem 0 0 .5rem;
+}
+footer .companyInfo span{
+	font-size: .32rem;
+	color: #f9c86f;
+}
+footer .companyInfo .toTop{
+	position: absolute;
+	width: 1.333rem;
+	height: 1.333rem;
+	top: 50%;
+	right: .35rem;
+	margin: -.666rem 0 0 0;
+	background: url("../images/toTop.png");
+	background-size: 100% 100%;
+}
+/* END footer */
+
+/* BEGIN modal common style */
+.modal_cover{
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    background: rgba(26, 23, 23, 0.8);
+    z-index: 9000;
+    margin: 0 auto;
+}
+.modal_frame{
+	/* min-width: 300px;
+    max-width: 700px; */
+    width: 8rem;
+    height: 8.5rem;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9001;
+    /* border: 1px solid white; */
+}
+/* END  modal common style */
+
+/* BEGIN 二维码modal */
+#erweima{
+	display: none;
+}
+#erweima .modal_frame{
+	text-align: center;
+}
+#erweima .modal_frame img{
+		/* 536 * 431 */
+	width: 7rem;
+	height: 8.705rem;	
+}
+/* END 二维码Modal */
+
+/* BEGIN 分享Modal */
+#shareModal{
+	display: none;
+}
+#shareModal .modal_frame {
+	text-align: center;
+	top: 30%;
+    left: 50%;
+}
+#shareModal .modal_frame img{
+	/* 538 * 497 */
+	width: 7.577rem;
+	height: 7rem;
+}
+/* END 分享Modal */
+/* 电脑版未开放提示 */
+#pcTipModal{
+	display: none;
+	text-align: center;
+}
+#pcTipModal span{
+	color: white;
+	line-height: 4rem;
+	font-size: .5rem;
+}

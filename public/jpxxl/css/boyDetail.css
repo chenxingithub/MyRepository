@@ -1,0 +1,271 @@
+* {
+	font-family: "Microsoft YaHei" ! important;
+}
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+	background: #f8e9c8;
+	background-image: url("../images/personDetail/bg-fill.png");
+	background-repeat: repeat-y;
+	background-size: 100% 1.33rem;
+}
+.container {
+	width: 10rem;
+	margin: 0 auto;
+}
+
+.downloadTop {
+	width: 10rem;
+	height: 1.33333rem;
+	position: fixed;
+	background: url("../images/downloadTopBg.png") no-repeat;
+	background-size: 10rem 1.3333rem;
+	margin: 0 auto;
+	padding: 0.12rem 0.4rem;
+	z-index: 8888;
+	background: #e8ce9c;
+}
+.topContent {
+	width: 100%;
+	/* height: 1.066rem; */
+	height: 100%;
+}
+.topContentImg{
+	width: 1.066rem;
+	height: 1.066rem;
+}
+.topContentImg img{
+	width: 100%;
+	height: 100%;
+}
+.topContentImg,.topContentText {
+	float: left;
+}
+#topBtn {
+	float: right;
+	width: 3.5rem;
+	height: 0.8rem;
+	margin-top: 0.15rem;
+}
+.homePageBtn{
+    width: 1.6rem;
+    height: 0.8rem;
+    float: left;
+	background: url("../images/homePageBtn.png") no-repeat;
+	/* 250 60 */
+	background-size: 3.333rem 0.8rem;
+	background-position: 0 0;
+}
+.gemeDownloadBtn{
+    width: 1.6rem;
+    height: 0.8rem;
+    float: right;
+	background: url("../images/topBtn.png") no-repeat;
+	/* 250 60 */
+	background-size: 3.333rem 0.8rem;
+	background-position: 0 0;
+}
+.topContentText {
+	padding: 0.05rem 0 0.13rem 0.08rem;
+	color: #683307;
+}
+.topContentText em{
+	font-size: .4266rem;
+	font-weight: bold;	
+}
+.topContentText span{
+	font-size: .2933rem;
+}
+/* BEGIN 导航条*/
+.navBar {
+	width: 10rem;
+	height: 1.6rem;
+	background: #ac7d11;
+	position: fixed;
+	bottom: 0;
+	z-index: 8888;
+}
+
+.navBar .nav{
+	width: 2rem;
+	height: 1.6rem;
+	float: left;
+	margin: 0 auto;
+}
+.navBar .navIcon{
+	margin: -.45rem auto 0;
+	position: relative;
+	top: 50%;
+	background: url("../images/navBarIcon.png") no-repeat;
+	background-size:  10rem 2.4rem;
+	display: block;
+}
+.navBar .newsInfoImg{
+	width: 1.29rem;
+	height: 1.09rem;
+	background-position: -.6333rem -.1733rem;
+	/* y = 1.25rem */
+	text-align: center; 
+}
+.navBar .newsInfoImgClick{
+	background-position: -.6333rem -.1733rem;
+}
+.navBar .gameInfoImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -2.5333rem -.1733rem;
+}
+.navBar .newInstructionImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -4.366rem -.1733rem;
+}
+.navBar .getGiftImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -6.2933rem -.1733rem;
+}
+.navBar .usersImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -8.2rem -.1733rem;
+}
+/* END 导航条*/
+
+/* BEGIN 版心 */
+.main{
+	width: 10rem;
+	/* height: 14.9066rem; */
+	height: auto;
+	margin: 0 auto;
+	/* background: url("../images/personDetail/niangengyao.jpg") no-repeat;
+	background-size: 10rem 14.9066rem; */
+	position: relative;
+}
+.main .bg{
+	width: 10rem;
+	height: 14.966rem;
+}
+.main .content{
+	width: 10rem;
+	position: absolute;
+	top: 8.2rem;
+}
+
+.main .detailText{
+	width: 8.8rem;
+	margin: 0 auto;
+	overflow: auto;
+	color: #a1733a;
+}
+.detailText p{
+	margin-bottom: .15rem;
+	font-size: .34rem;
+}
+.detailText strong{
+	font-weight: 700;
+}
+/* .zizhi{
+	display: inline-block;
+	width: 7rem;
+} */
+.tb td{
+	font-size: .34rem;
+	color: #a1733a;
+}
+.zizhi td:last-child{
+	text-align: right;
+	padding-left: .25rem;
+}
+.redcol{
+	color: #f46253;
+}
+/* BEGIN 滚动条样式*/
+.detailText::-webkit-scrollbar  
+{  
+    width: 7px;  
+    height: 16px;  
+    /* background-color: #000103; */
+}  
+  
+/*定义滚动条轨道 内阴影+圆角*/  
+.detailText::-webkit-scrollbar-track  
+{  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);  
+    border-radius: 10px;  
+    background-color: #dfcca3;  
+}  
+  
+/*定义滑块 内阴影+圆角*/  
+.detailText::-webkit-scrollbar-thumb  
+{  
+    border-radius: 10px;  
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);  
+    background-color: #b59554;  
+}  
+/* END 滚动条样式*/
+#bottomIcon{
+	background: url('../images/personDetail/buttomIcon.png') no-repeat;
+	background-size: 100% 100%;
+	width: 9.733rem;
+	height: 1.04rem;
+	margin-left: .1335rem;
+	/* position: absolute;
+	bottom: 1.7rem; */
+}
+/* END 版心 */
+
+/* BEGIN modal common style */
+.modal_cover{
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    background: rgba(26, 23, 23, 0.8);
+    z-index: 9000;
+    margin: 0 auto;
+}
+.modal_frame{
+	/* min-width: 300px;
+    max-width: 700px; */
+    width: 8rem;
+    height: 8.5rem;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9001;
+    /* border: 1px solid white; */
+}
+/* END  modal common style */
+
+/* BEGIN 二维码modal */
+#erweima{
+	display: none;
+}
+#erweima .modal_frame{
+	text-align: center;
+}
+#erweima .modal_frame img{
+		/* 536 * 431 */
+	width: 7rem;
+	height: 8.705rem;	
+}
+/* END 二维码Modal */
+
+/* BEGIN 分享Modal */
+#shareModal{
+	display: none;
+}
+#shareModal .modal_frame {
+	text-align: center;
+	top: 30%;
+    left: 50%;
+}
+#shareModal .modal_frame img{
+	/* 538 * 497 */
+	width: 7.577rem;
+	height: 7rem;
+}
+/* END 分享Modal */

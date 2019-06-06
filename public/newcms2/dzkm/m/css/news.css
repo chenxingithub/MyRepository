@@ -1,0 +1,56 @@
+body {
+    /*background-color: #EDEDED;*/
+}
+.news_info {
+    padding-top: 0.4rem;
+    margin: 0 0.3rem 0.2rem;
+}
+.news_info h1 {
+    font-size: 0.4rem;
+    text-align: center;
+    color: #FFF;
+    line-height: 0.6rem;
+
+}
+
+.time {
+    font-size: 0.2rem;
+    text-align: center;
+    padding: 0.2rem 0;
+    border-bottom: 1px dashed #BBB;
+}
+
+.info_content {
+    padding: 0.2rem 0.3rem 0.5rem;
+    text-indent: 2em;
+    border-bottom: 1px solid #444;
+}
+
+.info_content p {
+    font-size: 0.27rem;
+    padding: 0.1rem 0;
+}
+.info_content img {
+    width: 100%;
+    padding: 0.25rem 0;
+    display: block;
+}
+
+.no {
+    text-indent: 0;
+}
+.c {
+    text-align: center;
+}
+
+.no tr th, .no tr td {
+    border: 1px solid #000;
+    height: 0.8rem;
+}
+.no tr th {
+    width: 1.2rem;
+    color: #000;
+}
+.no tr td {
+    padding:0 0.2rem;
+}

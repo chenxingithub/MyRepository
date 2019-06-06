@@ -1,0 +1,102 @@
+<template>
+    <div>
+        <section class="content" slot="content">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box">
+                        <div class="box-header with-border">
+                            <h3 class="box-title">{{ myName }}</h3>
+                        </div>
+
+                        <div class="box-body">
+                                    <form class="form col-md-6 col-md-offset-3" role="form" @submit.prevent="edit">
+                                        <div class="form-group">
+                                            <label for="title">{{ $t('form.title') }}</label>
+                                            <input type="text" class="form-control" id="title" :placeholder="$t('form.title')" v-model="discussion.title">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="image">封面地址</label>
+                                            <div class="input-group">
+                                                <input type="text" id="image" name="image" v-model="discussion.image" class="form-control">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default popup_selector" type="button" data-inputid="image">选择封面!</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="video">视频地址</label>
+                                            <div class="input-group">
+                                                <input type="text" id="video" name="video" v-model="discussion.video" class="form-control">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-default popup_selector" type="button" data-inputid="video">选择视频!</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="body">{{ $t('form.body') }}</label>
+                                            <textarea class="form-control" id="body" :placeholder="$t('form.body')" v-model="discussion.body" cols="30" rows="10"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <el-button type="primary" @click="handleBack">返回</el-button>
+                                            <button type="submit" class="btn btn-info pull-right">{{ $t('form.edit') }}</button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+                myName: '修改视频',
+                discussion: {},
+                editor:''
+            }
+        },
+        mounted() {
+            this.editor = CKEDITOR.replace('body');
+        },
+        created() {
+            this.$axios.get('/api/video/' + this.$route.params.id + '/edit')
+                .then((response) => {
+                    this.discussion = response.data
+                    if(this.discussion.body){
+                        this.editor.setData(this.discussion.body)
+                    }
+                })
+        },
+        methods: {
+            edit() {
+                this.discussion.body = this.editor.getData()
+                this.discussion.image = $("#image").val()
+                this.discussion.video = $("#video").val()
+                this.$axios.put('/api/video/' + this.$route.params.id, this.discussion)
+                    .then((response) => {
+                        if(response.status === 204){
+                            this.$message({
+                                showClose: true,
+                                message: (response.data.length === 0?'修改成功':response.data),
+                                type: 'success'
+                            });
+                            this.$router.push('/admin/video')
+                        }else{
+                            this.$message({
+                                showClose: true,
+                                message: (response.data.error.data === 0?'修改失败':response.data.error.data),
+                                type: 'error'
+                            });
+                        }
+                    })
+            },
+            handleBack(){
+                this.$router.back();
+            }
+        }
+    }
+</script>

@@ -1,0 +1,570 @@
+* {
+	font-family: "Microsoft YaHei" ! important;
+}
+html, body {
+	height: 100%;
+	overflow-x: hidden;
+	background: white;
+}
+.container {
+	width: 10rem;
+	overflow-x: hidden;
+	margin: 0 auto;
+}
+
+.downloadTop {
+	width: 10rem;
+	height: 1.33333rem;
+	position: fixed;
+	background: url("../images/downloadTopBg.png") no-repeat;
+	background-size: 10rem 1.3333rem;
+	margin: 0 auto;
+	padding: 0.12rem 0.4rem;
+	z-index: 8888;
+	background: #e8ce9c;
+}
+.topContent {
+	width: 100%;
+	/* height: 1.066rem; */
+	height: 100%;
+}
+.topContentImg{
+	width: 1.066rem;
+	height: 1.066rem;
+}
+.topContentImg img{
+	width: 100%;
+	height: 100%;
+}
+.topContentImg,.topContentText {
+	float: left;
+}
+#topBtn {
+	float: right;
+	width: 3.5rem;
+	height: 0.8rem;
+	margin-top: 0.15rem;
+}
+.homePageBtn{
+    width: 1.6rem;
+    height: 0.8rem;
+    float: left;
+	background: url("../images/homePageBtn.png") no-repeat;
+	/* 250 60 */
+	background-size: 3.333rem 0.8rem;
+	background-position: 0 0;
+}
+.gemeDownloadBtn{
+    width: 1.6rem;
+    height: 0.8rem;
+    float: right;
+	background: url("../images/topBtn.png") no-repeat;
+	/* 250 60 */
+	background-size: 3.333rem 0.8rem;
+	background-position: 0 0;
+}
+.topContentText {
+	padding: 0.05rem 0 0.13rem 0.08rem;
+	color: #683307;
+}
+.topContentText em{
+    font-size: .4266rem;
+    font-weight: bold;	
+}
+.topContentText span{
+	font-size: .2933rem;
+}
+/* BEGIN 导航条*/
+.navBar {
+	width: 10rem;
+	height: 1.6rem;
+	background: #ac7d11;
+	position: fixed;
+	bottom: 0;
+	z-index: 8888;
+}
+
+.navBar .nav{
+	width: 2rem;
+	height: 1.6rem;
+	float: left;
+	margin: 0 auto;
+}
+.navBar .navIcon{
+	margin: -.45rem auto 0;
+	position: relative;
+	top: 50%;
+	background: url("../images/navBarIcon.png") no-repeat;
+	background-size:  10rem 2.4rem;
+	display: block;
+}
+.navBar .newsInfoImg{
+	width: 1.29rem;
+	height: 1.09rem;
+	background-position: -.6333rem -.1733rem;
+	/* y = 1.25rem */
+	text-align: center; 
+}
+.navBar .newsInfoImgClick{
+	background-position: -.6333rem -.1733rem;
+}
+.navBar .gameInfoImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -2.5333rem -.1733rem;
+}
+.navBar .newInstructionImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -4.366rem -.1733rem;
+}
+.navBar .getGiftImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -6.2933rem -.1733rem;
+}
+.navBar .usersImg{
+	width: 1.25rem;
+	height: 1rem;
+	background-position: -8.2rem -.1733rem;
+}
+/* END 导航条*/
+
+
+/* BEGIN 版心*/
+
+.main{
+    width: 10rem;
+    min-height: 15rem;
+    background: #fff7dc;
+    margin-top: 1.333rem;
+    position: relative;
+}
+.main .headImg{
+    width: 10rem;
+    height: 4rem;
+}
+.headImg img{
+    width: 100%;
+    height: 100%;
+}
+.main .nav{
+    width: 9.7333rem;
+    height: 1.0666rem;
+    margin: .266rem auto 0;
+    background: url("../images/gift/nav.png") no-repeat;
+    background-size: 9.7333rem 3.406rem;
+    background-position: 0 0;
+    /* background-position: 0 -1.15rem; */
+    /* background-position: 0 -2.35rem; */
+}
+.main .nav div{
+    width: 33.33%;
+    height: 1.0666rem;
+    float: left;
+}
+/* BEGIN 领取记录*/
+.main .giftRecord{
+    width: 10rem;
+    margin: .5rem auto 0;
+    display: block;
+}
+.recordList li{
+    width: 9.2rem;
+    height: 2.8rem;
+    margin: 0 auto;
+}
+.recordTitle{
+    position: relative;
+    height: .5rem;
+    /* background: skyblue; */
+}
+.recordTitle:before{
+    width: .0667rem;
+    height: .37rem;
+    display: inline-block;
+    background: #ad7d11;
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -.21rem;
+}
+/* .recordTitle i{
+    width: .0667rem;
+    height: .4rem;
+    display: block;
+    background: #ad7d11;
+    content: "";
+    position: absolute;
+    top: 0;
+} */
+.recordTitle em{
+    color: #8e6508;
+    font-size: .38rem;
+    margin-left: .2rem;
+    line-height: .5rem;
+    font-weight: bolder;
+    vertical-align: center;
+}
+.recordTxt{
+    color: #bb9345;
+    font-size: .32rem;
+    margin-top: .2rem;
+}
+.recordTime{
+    color: #bb9345;
+    font-size: .32rem;
+    margin-bottom: .2rem;
+}
+.recordTime a{
+    text-decoration: underline;
+    color: #fd4013;
+}
+.giftCode span{
+    color:#8e6508;
+    font-size: .32rem;
+}
+.giftCode .code{
+    width: 4.4rem;
+    height: .733rem;
+    background: url('../images/gift/codeBg.png') no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    color: #784d03;
+    text-align: center;
+    font-size: .34666rem;
+    line-height: .7333rem;
+    margin-left: .15rem;
+}
+.giftCode .code span{
+    -webkit-user-select: text;
+    user-select: text;
+}
+/* END 领取记录*/
+
+/* BEGIN 所有礼包*/
+.giftAll{
+    width: 9.2rem;
+    margin: 0 auto;
+    display: none;     
+}
+.giftLink {
+    width: 9.2rem;
+    height: 1.222rem;
+    color: #85510f;
+    font-size: .3733rem;
+    margin: .2rem auto .2rem;
+    position: relative;
+}
+.giftLink a{
+    text-decoration: none;
+}
+.giftLink .giftLink1{
+    width: 4.4rem;
+    height: 1.222rem;
+    display: block;
+    background: url('../images/gift/giftBtn.png') no-repeat;
+    background-size: 4.4rem 5.096rem;
+    background-position: 0 0;
+    /* background-position: 0 -2.53rem; */
+    float: left;
+}
+.giftLink .giftLink2{
+    width: 4.4rem;
+    height: 1.222rem;
+    display: block;
+    background: url('../images/gift/giftBtn.png') no-repeat;
+    background-size: 4.4rem 5.096rem;
+    background-position: 0 -1.25rem;
+    /* background-position: 0 -3.8rem; */
+    float: right;
+}
+.giftLink span{
+    margin-left: 1.5rem;
+    line-height: 1.222rem;
+    color: #85510f;
+}
+.giftList li{
+    width: 9.2rem;
+    /* height: 1.466rem; */
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    border-bottom: 1px dotted  #e5d5b6;
+    padding-bottom: .1rem;
+}
+.focusGift{
+    align-self: center;
+}
+.giftList li em{
+    color: #8e6508;
+    font-size: .32rem;
+}
+.giftList li p{
+    font-size: .2666rem;
+    color: #bb9345;
+    margin: .05rem 0;
+}
+.focusGift span{
+    color: #bb9345;
+    font-size: .2133rem; 
+}
+.focusGift .bili_bar{
+    width: 2.5rem;
+    height: .16rem;
+    border: 1px solid #cc920e;
+    border-radius: .3rem;
+    display: inline-block;
+    margin-right: 1rem;
+}
+.bili_bar .fill_bar{
+    width: 60%;
+    height: .1rem;
+    background: #cc920e;
+    border-radius: .2rem;
+}
+.giftList .checkGift{
+    width: 2.33rem;
+    height: .8666rem;
+    border: 1px solid #fe5200;
+   
+    text-align: center;
+    line-height: .8666rem;
+    border-radius: .08rem;
+    align-self: center;
+   
+}
+.giftList .checkGift span{
+    font-size: .32rem;
+    color: #fe5200;
+}
+.giftList li:last-child{
+    border-bottom: 0;
+}
+
+.load{
+    width: 9.066rem;
+    height: 1.866rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;   
+}
+.load span{
+    font-size: .29333rem;
+}
+.load .line{
+    width: 3rem;
+    height: 1px;
+    background: #ddcaa0;
+    display: block;
+    align-self: center;
+}
+.loadMore,.moreOver,.loading{
+    width: 3rem;
+    height: .6666rem;
+    text-align: center;
+    line-height: .6666rem;
+    align-self: center;
+}
+.load .loadMore{
+    color: #ddcaa0;
+}
+.load .moreOver{
+    width: 2.266rem;
+    height: .666rem;
+    background: #ddcaa0;
+    color: #a5936a;
+}
+.load .loading{
+    color: #ddcaa0;
+}
+.load .loading img{
+    width: .45rem;
+    height: .45rem;
+    display: inline-block;
+    margin-top: -.08rem;
+}
+/* END 所有礼包*/
+
+/* BEGIN 如何兑换*/
+.exchange{
+    width: 9.2rem;
+    margin: 0 auto 0;
+    display: none;
+}
+.exchange .exchangeTitle{
+    width: 4.1333rem;
+    height: .5066rem;
+    background: url("../images/gift/exchangeBg.png") no-repeat;
+    background-size: 100% 100%;
+    margin: .4rem auto 0;
+}
+.exchange ul li{
+    height: 3.2rem;
+    width: 4.266rem;
+    float: left;
+    text-align: center;
+}
+.exchange ul li a{
+    text-decoration: none;
+}
+.exchange ul li em{
+    color: #ad7d11;
+    font-size: .32rem;
+}
+.exchange ul li:nth-child(2){
+    float: right;
+}
+.exchange ul li:nth-child(4){
+    float: right;
+}
+.exchange ul li img{
+    width: 4.266rem;
+    height: 2.4rem;
+    background: #ecd39c;
+    margin-top: .15rem;
+}
+/* END 如何兑换*/
+
+
+/* END 版心*/
+
+
+/* BEGIN footer */
+footer {
+	width: 10rem;
+	height: 6rem;
+	margin-bottom: 1.6rem;
+}
+footer .footFunc {
+	width: 10rem;
+	height: 4rem;
+	background: #855704;
+}
+footer .footFunc table{
+	width: 10rem;
+	height: .826rem;
+	display: inline-block;
+	margin-top: .65rem;
+}
+footer .footFunc table td{
+	width: 3.333rem;
+	height: .826rem;
+	/* padding: 0 0 0 .3rem; */
+	text-align: center;
+}
+footer .footFunc table td img{
+	width: .826rem;
+	height: .826rem;
+}
+footer .footFunc table td span{
+	margin-left: .15rem;
+	font-size: .32rem;
+	color: #f9c86f;
+}
+footer .phone {
+	text-align: center;
+	margin-top: .65rem;
+	color: #f9c86f;
+}
+footer .phone {
+	font-size: .32rem;
+}
+footer .phone p{
+	margin-top: .1rem;
+}
+footer .phone b{
+	margin-left: .15rem;
+}
+footer .phone img{
+	width: .666rem;
+	height: .64rem;
+}
+footer .companyInfo {
+	width: 10rem;
+	height: 2rem;
+	position: relative;
+	background: #6d4703;
+	padding: .25rem 0 0 .5rem;
+}
+footer .companyInfo span{
+	font-size: .32rem;
+	color: #f9c86f;
+}
+footer .companyInfo .toTop{
+	position: absolute;
+	width: 1.333rem;
+	height: 1.333rem;
+	top: 50%;
+	right: .35rem;
+	margin: -.666rem 0 0 0;
+	background: url("../images/toTop.png");
+	background-size: 100% 100%;
+}
+/* END footer */
+
+/* BEGIN modal common style */
+.modal_cover{
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    background: rgba(26, 23, 23, 0.8);
+    z-index: 9000;
+    margin: 0 auto;
+}
+.modal_frame{
+	/* min-width: 300px;
+    max-width: 700px; */
+    width: 8rem;
+    height: 8.5rem;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9001;
+    /* border: 1px solid white; */
+}
+/* END  modal common style */
+
+/* BEGIN 二维码modal */
+#erweima{
+	display: none;
+}
+#erweima .modal_frame{
+	text-align: center;
+}
+#erweima .modal_frame img{
+		/* 536 * 431 */
+	width: 7rem;
+	height: 8.705rem;	
+}
+/* END 二维码Modal */
+
+/* BEGIN 分享Modal */
+#shareModal{
+	display: none;
+}
+#shareModal .modal_frame {
+	text-align: center;
+	top: 30%;
+    left: 50%;
+}
+#shareModal .modal_frame img{
+	/* 538 * 497 */
+	width: 7.577rem;
+	height: 7rem;
+}
+/* END 分享Modal */
+
+/* 电脑版未开放提示 */
+#pcTipModal{
+	display: none;
+	text-align: center;
+}
+#pcTipModal span{
+	color: white;
+	line-height: 4rem;
+	font-size: .5rem;
+}

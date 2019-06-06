@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+    <div class="startVideo-er">
+        <div class="skip">
+        </div>
+        <video id="startVideo" width="100%" height="100%" autoplay muted playsinline  src="./jp-h5.mp4">
+            2131221312
+        </video>
+    </div>
+</body>
+<script type="text/javascript" src="./js/flexible.debug_750.js"></script>
+<script type="text/javascript" src="./js/jquery-2.1.4.min.js"></script>
+<style type="text/css">
+    .startVideo-er{
+          width: 100%; 
+          height: 100%; 
+          background: #000;
+          overflow: auto; 
+          margin: auto; 
+          position: absolute; 
+          top: 0; left: 0; bottom: 0; right: 0; 
+    }
+    .skip{
+            width: 8rem;
+            height: 4rem;
+            background: green;
+            position:absolute;
+            left:0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            opacity:0;
+            z-index: 99;
+            display: none;
+    }
+</style>
+<script type="text/javascript">
+    var audio = document.getElementById("startVideo"); 
+    audio.loop = false;
+    audio.addEventListener('ended', function () {  
+    }, false);
+
+getvideoprogress();
+
+function getvideoprogress() {
+    setTimeout(function () {
+    var vid = document.getElementById("startVideo");
+    var currentTime=vid.currentTime.toFixed(2);
+    if(currentTime > 8.75){
+    //触发
+    $('.skip').show();
+    vid.pause();
+    return false;
+    }
+    getvideoprogress();
+    }, 10);
+}  
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    var vid = document.getElementById("startVideo");
+  $(".skip").click(function(){
+    $('.skip').hide();
+    vid.play();
+  });
+});
+</script>
+</html>

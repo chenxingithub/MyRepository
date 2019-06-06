@@ -1,0 +1,10 @@
+stages:
+  - deploy
+
+develop_deploy_package:
+  stage: deploy
+  only:
+    - develop
+  script:
+    - echo "开始发布develop"
+    - sh /data/ops-shell/bin/gitlab_dev_deploy_project.sh /data/web/bnweb-cms2
